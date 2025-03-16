@@ -1,0 +1,10 @@
+^C:\USERS\M S I\DESKTOP\C++\BUILD\CMAKEFILES\DCB3BA92D63FA3D8CA1A4C78A8146235\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/M S I/Desktop/C++" "-BC:/Users/M S I/Desktop/C++/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/M S I/Desktop/C++/build/MotorControl.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
